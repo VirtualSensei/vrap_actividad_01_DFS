@@ -1,0 +1,274 @@
+/* 
+   *------------------------------------*
+   | Hoja de estilo para el sitio GCIIT |
+   * -----------------------------------*
+
+   Actividad Nº: 1
+Descripción: Maquetación HTML5 + CSS3
+ISPC: Desarrolador Full Stack
+Fecha limite entrega: 20/11/2020
+
+Alumno: Victor Raul Alberto Pedron
+mail: victor.pedron@gmail.com
+Version    : a1.0
+Revisión   : 20.11.2020
+
+*/
+
+/* ------------------- Estilo body */
+body {
+    width: 1000px; 
+    height: 750px; 
+    margin: auto; 
+    font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	color: #5B5B5B;
+    background-image: url("imagenes/fondo.jpg");
+
+}
+
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	color: #222222;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+table {
+    width:100%;
+}
+
+td {
+    border: 0px solid black;
+}
+
+
+/* ------------------- Estilo header */
+header {
+    width: 1000px; 
+    height: 250px; 
+    
+}
+
+/* ------------------- Estilo nav */
+nav {
+    width: 1000px; 
+    height: 50px; 
+}
+
+/* ------------------- Estilo main */
+main {
+    width: 1000px; 
+    height: 400px; 
+    background-color: whitesmoke;
+}
+
+/* ------------------- Estilo footer */
+footer {
+    width: 1000px; 
+    height: 50px; 
+    padding: 5px 0 0 0;
+    font-family: 'Abel', sans-serif;
+}
+
+footer p {
+	margin: 0;
+	padding-top: 10px;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #2A2A2A;
+}
+
+
+
+/* ------------------- Estilo Secciones del header */
+section#banner {
+    width: 700px; 
+    height: 250px; 
+    float: left; 
+    display: flex;
+    align-items: center;
+}
+
+section#logo {
+    width: 300px; 
+    height: 125px;
+    float: left; 
+    display: flex;
+    align-items: center;
+}
+
+section#login {
+    width: 300px; 
+    height: 125px; 
+    float: left; 
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------- Estilo de las distintas partes del main */
+aside#panel_izq {
+    width: 350px; 
+    height: 400px; 
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+article {
+    width: 600px; 
+    height: 400px; 
+    float: left;
+}
+
+aside#panel_der {
+    width: 50px; 
+    height: 400px; 
+    float: left;
+}
+
+
+/* ------------------- Estilo Menu */
+
+#menu {
+	float: right;
+	width: 1000px;
+	height: 90px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	float: left;
+	margin: 0;
+	padding: 5px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	padding: 0px 0px 0px 0px;
+}
+
+#menu a {
+	display: block;
+	margin-right: 1px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #12212F;
+	border: none;
+}
+
+#menu a:hover, #menu .pagina_actual a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu .pagina_actual a {
+	background: #132434;
+	border-radius: 5px;
+}
+
+
+/* ------------------- Centrar horizontalmente Imagenes */
+img{
+    display:block;
+    margin:auto;
+    }
+
+/* ------------------- Estilo de texto en area del Login */
+
+#texto_login {
+    font-family: 'Tangerine', serif;
+    font-size: 70px;
+    text-shadow: 4px 4px 4px #aaa;
+    display:block;
+    margin:auto;
+  }
+  
+
+/* ------------------- Estilo de texto en area del Article */
+
+#pagina_art {
+	width: 500px;
+	margin: 0 auto;
+	padding: 0px 0px;
+	background: #FFFFFF;
+}
+
+#contenido_art {
+	float: left;
+	width: 500px;
+	padding: 0px 0px 0px 0px;
+}
+
+.post_art {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.post_art .titulo {
+	padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+
+.post_art .ptexto {
+	padding: 0px 0px 0px 0px;
+	text-align: justify;
+}
+
+/* ------------------- Estilo del formulario de Contacto */
+
+.formulario_contacto form label {
+    display: block;
+}
+
+.formulario_contacto form button,
+.formulario_contacto form input,
+.formulario_contacto form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: black;
+    border-bottom: 2px solid green;
+}
+
+.formulario_contacto form button {
+    background: yellowgreen;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}

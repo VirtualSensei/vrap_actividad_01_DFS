@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!--
+Actividad Nº: 1
+Descripción: Maquetación HTML5 + CSS3
+ISPC: Desarrolador Full Stack
+Fecha limite entrega: 20/11/2020
+
+Alumno: Victor Raul Alberto Pedron
+mail: victor.pedron@gmail.com
+Version    : a1.0
+Revisión   : 20.11.2020
+-->
+
+<head>
+<meta charset="utf-8"> 
+<title>SERVICIOS | Centro de Investigación Integral del Transito</title>   
+
+<!-- ____________ Estilo de hoja INTERNO ____________ -->
+<style>
+    /* Establecer para todos los elementos de la pagina el margin y padding a 0 */
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    
+    /* Definir la imagen de fondo para la pagina */
+    html{
+            background-image: url("imagenes/fondo.jpg");
+    }
+</style>
+
+<!-- ____________ Utilizar las API de Google Fonts ____________ -->
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css' />
+
+<!-- ____________ Estilo de hoja EXTERNO ____________ -->
+<link rel="stylesheet" href="estilo_GCIIT.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- ____________ Seccion BANNER ____________ -->
+        <section id="banner">
+            <img src="imagenes/banner_5.png"
+                 alt="Imagen de BANNER"
+                 width="600" height="200" />
+        </section>
+        <!-- ____________ Seccion LOGO ____________ -->
+        <section id="logo">
+            <img src="imagenes/logo_GCIIT.png"
+                 alt="Imagen del LOGO" 
+                 width="280" height="70" />
+        </section>
+        <!-- ____________ Seccion LOGIN ____________ -->
+        <section id="login">
+            <div id="texto_login">Servicios</div>
+        </section>
+    </header>   
+
+    <!-- ____________ Area MENU ____________ -->
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gciit_mision.html">Misión</a></li>
+                <li><a href="gciit_vision.html">Visión</a></li>
+                <li><a href="gciit_valores.html">Valores</a></li>
+                <li class="pagina_actual"><a href="gciit_servicios.html">Servicios</a></li>
+                <li><a href="gciit_contacto.html">Contacto</a></li>
+
+            </ul>
+        </div>
+    </nav> 
+
+    <!-- ____________ Area PRINCIPAL ____________ -->
+    <main>
+        <!-- ____________ Panel IZQUIERDO ____________ -->
+        <aside id="panel_izq">
+            <img src="imagenes/logo_CIIT.png"
+                 alt="Imagen del LOGO" 
+                  />    
+        </aside>
+        <!-- ____________ Panel CENRAL ____________ -->
+        <article>
+            <div id="pagina_art">
+                <div id="contenido_art">
+                    <div class="post_art">
+                        <img src="imagenes/detalle_servicios.png"
+                            alt="Servicios" 
+                            width="85%"
+                            height="85%"
+                        />    
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ____________ PANEL DERECHO ____________ -->
+        <aside id="panel_der"></aside>
+    </main>   
+
+    <footer>
+        <p>&copy; TNC Victor R.A. Pedron | Actividad Nº 1 Maquetación HTML5 + CSS3 | ISPC: Desarrolador Full Stack 2020.</p>
+    </footer>
+</body>
+</html>
